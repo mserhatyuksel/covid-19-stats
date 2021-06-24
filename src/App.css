@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #f5f6fa;
+}
+
+.app {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f6fa;
+    padding: 20px;
+}
+
+.app__left {
+    flex: 0.60;
+}
+
+.app__right {
+    flex: 0.35;
+}
+
+.app__right canvas {
+    margin-top: 20px;
+}
+
+.app__right h3 {
+    color: #03045e;
+}
+.app__right h3:last-of-type{
+    padding-top: 16px;
+}
+
+
+.app__stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__corona p, .app__corona h2 {
+    color: #03045e;
+}
+
+.app__recoved p, .app__recoved h2 {
+    /* 43aa8b */
+    color: #06d6a0;
+}
+
+.app__deaths p, .app__deaths h2 {
+    color: #9d0208;
+}
+@media (max-width: 1365px) {
+    .app {
+        flex-direction: column;
+    }
+}
